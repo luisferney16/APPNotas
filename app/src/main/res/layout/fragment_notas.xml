@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notas">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AGREGAR NOTAS"
+        android:textColor="#3B167C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <Spinner
+        android:id="@+id/comboID"
+        android:layout_width="283dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:background="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="324dp"
+        android:layout_height="299dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comboID"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btncorte1"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="12dp"
+                android:background="#3F51B5"
+                android:text="REGISTRAR NOTAS DEL PRIMER CORTE"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/comboID" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Linear1"
+                android:layout_width="361dp"
+                android:layout_height="209dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btncorte1">
+
+
+                <EditText
+                    android:id="@+id/NotaTtextC1"
+                    android:layout_width="131dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="Nota Talleres"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toStartOf="@+id/PorcTtextC1"
+                    app:layout_constraintHorizontal_bias="0.578"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="7dp" />
+
+                <EditText
+                    android:id="@+id/notaQtextC1"
+                    android:layout_width="133dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:hint="Nota Quices"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/NotaTtextC1" />
+
+                <EditText
+                    android:id="@+id/notaPTtextC1"
+                    android:layout_width="135dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:hint="Nota Parcial Teorico"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/notaQtextC1" />
+
+                <EditText
+                    android:id="@+id/notaPPtextC1"
+                    android:layout_width="136dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Nota Parcial Practico"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/notaPTtextC1" />
+
+                <EditText
+                    android:id="@+id/PorcTtextC1"
+                    android:layout_width="171dp"
+                    android:layout_height="41dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Talleres"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="7dp" />
+
+                <EditText
+                    android:id="@+id/porcQtextC1"
+                    android:layout_width="169dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Quices"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PorcTtextC1" />
+
+                <EditText
+                    android:id="@+id/porcPTtextC1"
+                    android:layout_width="171dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Parcial Teórico"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/porcQtextC1" />
+
+                <EditText
+                    android:id="@+id/porcPPtextC1"
+                    android:layout_width="171dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:ems="10"
+                    android:hint="Porcentaje PArcial Practico"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/porcPTtextC1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btnCorte2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#673AB7"
+                android:text="REGISTRAR NOTAS SEGUNDO CORTE"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.452"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="619dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/notaTtextC2"
+                    android:layout_width="128dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:hint="Nota Talleres:"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/porcentajeTtextC2"
+                    app:layout_constraintHorizontal_bias="0.392"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/porcentajeTtextC2"
+                    android:layout_width="169dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Talleres"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/notaQtextC2"
+                    android:layout_width="134dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Nota Quices:"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/porcentajeQtextC2"
+                    app:layout_constraintHorizontal_bias="0.423"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/notaTtextC2" />
+
+                <EditText
+                    android:id="@+id/porcentajeQtextC2"
+                    android:layout_width="175dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Quices:"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/porcentajeTtextC2" />
+
+                <EditText
+                    android:id="@+id/notaPTtextC2"
+                    android:layout_width="136dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="10"
+                    android:hint="Nota Parcial Teorico:"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/porcentajePTtextC2"
+                    app:layout_constraintHorizontal_bias="0.233"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/notaQtextC2" />
+
+                <EditText
+                    android:id="@+id/porcentajePTtextC2"
+                    android:layout_width="168dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Parcial Teorico:"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/porcentajeQtextC2" />
+
+                <EditText
+                    android:id="@+id/notaPPtextC2"
+                    android:layout_width="135dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:ems="10"
+                    android:hint="Nota Parcial Practico"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/porcentajePPtextC2"
+                    app:layout_constraintTop_toBottomOf="@+id/notaPTtextC2" />
+
+                <EditText
+                    android:id="@+id/porcentajePPtextC2"
+                    android:layout_width="167dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Parcial Practico"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/porcentajePTtextC2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btnCorte3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#9C27B0"
+                android:text="REGISTRAR NOTAS TERCER CORTE"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.452"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="619dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Linear3"
+                android:layout_width="match_parent"
+                android:layout_height="208dp">
+
+                <EditText
+                    android:id="@+id/notaTtextC3"
+                    android:layout_width="128dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Nota Talleres:"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/porcentajeTtextC3"
+
+                    app:layout_constraintHorizontal_bias="0.432"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/porcentajeTtextC3"
+                    android:layout_width="169dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Talleres"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/porcentajePPtextC3"
+                    android:layout_width="173dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Parcial Practico"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/porcentajePTtextC3" />
+
+                <EditText
+                    android:id="@+id/notaQtextC3"
+                    android:layout_width="128dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Nota Quices"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/porcentajeQtextC3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/notaTtextC3" />
+
+                <EditText
+                    android:id="@+id/porcentajeQtextC3"
+                    android:layout_width="175dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Quices:"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/porcentajeTtextC3" />
+
+                <EditText
+                    android:id="@+id/porcentajePTtextC3"
+                    android:layout_width="168dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:ems="10"
+                    android:hint="Porcentaje Parcial Teorico"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/porcentajeQtextC3"
+                    app:layout_constraintTop_toBottomOf="@+id/porcentajeQtextC3" />
+
+                <EditText
+                    android:id="@+id/notaPPtextC3"
+                    android:layout_width="138dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="ta Parcial Practico"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/porcentajePPtextC3"
+                    app:layout_constraintHorizontal_bias="0.516"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/notaPTtextC3" />
+
+                <EditText
+                    android:id="@+id/notaPTtextC3"
+                    android:layout_width="129dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="a Parcial Teorico"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/porcentajePTtextC3"
+                    app:layout_constraintHorizontal_bias="0.54"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/notaQtextC3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="monospace"
+        android:text="Seleccione una asignatura: "
+        android:textColor="#D83131"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnGC1"
+        android:layout_width="124dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="64dp"
+        android:background="#4CAF50"
+        android:text="GUARDAR"
+        android:textColor="#FDFFFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

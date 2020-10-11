@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/asignatura"
+        android:title="Asignaturas"
+        android:icon="@drawable/icon_asignatura"/>
+    <item
+        android:id="@+id/notas"
+        android:title="Notas"
+        android:icon="@drawable/icon_registrar" />
+
+    <item
+        android:id="@+id/totales"
+        android:title="Semestre"
+        android:icon="@drawable/icon_notas"/>
+</menu>

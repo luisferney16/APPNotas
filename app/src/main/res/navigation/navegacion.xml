@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/asignatura">
+
+    <fragment
+        android:id="@+id/asignatura"
+        android:name="com.example.semestre.Asignatura"
+        android:label="fragment_asignatura"
+        tools:layout="@layout/fragment_asignatura" />
+    <fragment
+        android:id="@+id/notas"
+        android:name="com.example.semestre.notas"
+        android:label="fragment_notas"
+        tools:layout="@layout/fragment_notas" />
+    <fragment
+        android:id="@+id/totales"
+        android:name="com.example.semestre.totales"
+        android:label="fragment_totales"
+        tools:layout="@layout/fragment_totales" />
+</navigation>
